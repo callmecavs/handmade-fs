@@ -14,6 +14,10 @@ $ npm i handmade-fs --save
 $ yarn add handmade-fs
 ```
 
+## Linting
+
+[![JS Standard Style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT). © 2017 Michael Cavalea
