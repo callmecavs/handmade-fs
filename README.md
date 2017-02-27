@@ -14,9 +14,9 @@ $ npm i handmade-fs --save
 $ yarn add handmade-fs
 ```
 
-## Linting
+## Roadmap
 
-[![JS Standard Style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+- [ ] Add `merge` option (read multiple folders into same object)
 
 ## License
 
