@@ -1,0 +1,32 @@
+{
+  "name":        "handmade-fs",
+  "description": "File system tasks for handmade.",
+
+  "version": "0.0.1",
+  "license": "MIT",
+
+  "repository": "callmecavs/handmade-fs",
+
+  "author": {
+    "name":  "Michael Cavalea",
+    "email": "callmecavs@gmail.com",
+    "url":   "http://callmecavs.com/"
+  },
+
+  "scripts": {
+    "lint": "standard",
+    "test": "mocha test"
+  },
+
+  "keywords": [
+
+  ],
+
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  },
+
+  "devDependencies": {
+    "standard": "^8.6.0"
+  }
+}
