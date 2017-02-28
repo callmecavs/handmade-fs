@@ -1,6 +1,6 @@
 # handmade-fs
 
-[![handmade-fs on NPM](https://img.shields.io/npm/v/handmade-fs.svg?style=flat-square)](https://www.npmjs.com/package/handmade-fs) [![Standard JavaScript Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
+[![handmade-fs on Travis](https://img.shields.io/travis/callmecavs/handmade-fs.svg?style=flat-square)](https://travis-ci.org/callmecavs/handmade-fs) [![handmade-fs on NPM](https://img.shields.io/npm/v/handmade-fs.svg?style=flat-square)](https://www.npmjs.com/package/handmade-fs) [![Standard JavaScript Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 
 File system tasks for [handmade](https://github.com/callmecavs/handmade).
 
