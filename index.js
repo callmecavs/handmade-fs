@@ -1,6 +1,6 @@
 'use strict'
 
-const pathTo = str => `./lib/${ str }`
+const pathTo = str => `./lib/${str}`
 
 module.exports = {
   read: require(pathTo('read')),
