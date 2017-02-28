@@ -14,7 +14,8 @@
   },
 
   "scripts": {
-    "lint": "standard"
+    "lint": "standard",
+    "test": "mocha test"
   },
 
   "keywords": [
