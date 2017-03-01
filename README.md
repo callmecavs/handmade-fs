@@ -47,7 +47,8 @@ handmade(__dirname)
       read
     } = contents.core
 
-    resolve()
+    // pass along the contents
+    resolve(contents)
   }))
 
   // start the build
