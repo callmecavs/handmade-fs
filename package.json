@@ -14,7 +14,7 @@
   },
 
   "scripts": {
-    "lint": "standard",
+    "lint": "standard lib",
     "test": "npm run lint && mocha test"
   },
 
