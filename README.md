@@ -40,20 +40,23 @@ handmade(__dirname)
   // relative path to source files
   .task(read('./src'))
 
-  .task(contents => new Promise((resolve, reject) => {
-    // in subsequent tasks, access the read path and file data from the core
+  // in subsequent tasks, access the read path and file data from the core
+  .task(contents => new Promise((resolve, reject) => {    
     const {
       files,
       read
     } = contents.core
 
-    // pass along the contents
     resolve(contents)
   }))
 
   // start the build
   .build()
 ```
+
+### .write(path)
+
+Accepts a path to a new or existing folder, relative to the root of the build.
 
 ## Roadmap
 
