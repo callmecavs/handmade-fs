@@ -14,6 +14,46 @@ $ npm i handmade-fs --save
 $ yarn add handmade-fs
 ```
 
+## Use
+
+handmade-fs exports `read` and `write` tasks.
+
+```javascript
+const {
+  read,
+  write
+} = require('handmade-fs')
+```
+
+### .read(path)
+
+Accepts a path to an existing folder, relative to the root of the build.
+
+Recursively reads contents of all files within, populating the build object with the file data.
+
+```javascript
+const handmade = require('handmade')
+const { read } = require('handmade-fs')
+
+// read path is relative to this context
+handmade(__dirname)
+  // relative path to source files
+  .task(read('./src'))
+
+  .task(contents => new Promise((resolve, reject) => {
+    // in subsequent tasks, access the read path and file data from the core
+    const { core } = contents
+
+    const {
+      files,
+      read
+    } = core
+  }))
+
+  // start the build
+  .build()
+```
+
 ## Roadmap
 
 - [ ] Add `merge` option (read multiple folders into same object)
