@@ -42,12 +42,12 @@ handmade(__dirname)
 
   .task(contents => new Promise((resolve, reject) => {
     // in subsequent tasks, access the read path and file data from the core
-    const { core } = contents
-
     const {
       files,
       read
-    } = core
+    } = contents.core
+
+    resolve()
   }))
 
   // start the build
