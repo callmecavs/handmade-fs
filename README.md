@@ -29,7 +29,7 @@ const {
 
 Accepts a path to an existing folder, relative to the root of the build.
 
-Recursively reads contents of all files within, populating the build object with the file data.
+Reads contents of all files within, populating the build object with the file data.
 
 ```javascript
 const handmade = require('handmade')
@@ -57,6 +57,30 @@ handmade(__dirname)
 ### .write(path)
 
 Accepts a path to a new or existing folder, relative to the root of the build.
+
+Creates necessary folders and writes files, using the file data from the build object.
+
+```javascript
+const handmade = require('handmade')
+
+const {
+  read,
+  write
+} = require('handmade-fs')
+
+// write path is relative to this context
+handmade(__dirname)
+  // relative path to src files
+  .task(read('./src'))
+
+  // relative path to dist files
+  .task(write('./dist'))
+
+  // start the build
+  .build()
+```
+
+Because the file data isn't modified in a different task between the `read` and `write` tasks, the above code essentially _copies_ the `src` folder contents to the `dist` folder.
 
 ## Roadmap
 
